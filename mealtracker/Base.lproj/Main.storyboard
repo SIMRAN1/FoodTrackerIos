@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,20 +14,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mealtracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xo2-iF-kRu">
-                                <rect key="frame" x="0.0" y="40" width="355" height="96.5"/>
+                                <rect key="frame" x="0.0" y="63.999999999999993" width="355" height="96.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTC-od-HNf">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CsW-jA-2K1">
-                                        <rect key="frame" x="0.0" y="28.5" width="345" height="30"/>
+                                        <rect key="frame" x="0.0" y="28.333333333333329" width="345" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oOa-tD-56t">
                                                 <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
@@ -46,7 +46,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If7-kL-GHt">
-                                        <rect key="frame" x="0.0" y="66.5" width="156" height="30"/>
+                                        <rect key="frame" x="0.0" y="66.333333333333343" width="156" height="30"/>
                                         <state key="normal" title="set Default Meal Name"/>
                                         <connections>
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsZ-E2-3b2"/>
@@ -57,6 +57,14 @@
                                     <constraint firstAttribute="trailing" secondItem="CsW-jA-2K1" secondAttribute="trailing" constant="10" id="97W-7x-FX5"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="defaultPhoto" highlightedImage="Hustle Mode Activated" translatesAutoresizingMaskIntoConstraints="NO" id="KFD-eP-ICt">
+                                <rect key="frame" x="0.0" y="191" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Eae-wb-4nl" appends="YES" id="pdp-uD-1kE"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -69,11 +77,21 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="MTC-od-HNf" id="V6C-aa-9ud"/>
                         <outlet property="nameTextField" destination="H09-LW-sEA" id="rd3-un-Y2a"/>
+                        <outlet property="photoImage" destination="KFD-eP-ICt" id="U3W-Po-oX4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Eae-wb-4nl">
+                    <connections>
+                        <action selector="selectImage:" destination="BYZ-38-t0r" id="m4c-nu-9as"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-417" y="-18"/>
+            <point key="canvasLocation" x="-170" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hustle Mode Activated" width="414" height="736"/>
+        <image name="defaultPhoto" width="276" height="490"/>
+    </resources>
 </document>
