@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,20 +14,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mealtracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xo2-iF-kRu">
-                                <rect key="frame" x="0.0" y="63.999999999999993" width="355" height="96.333333333333314"/>
+                                <rect key="frame" x="0.0" y="40" width="355" height="446.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTC-od-HNf">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CsW-jA-2K1">
-                                        <rect key="frame" x="0.0" y="28.333333333333329" width="345" height="30"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="345" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oOa-tD-56t">
                                                 <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
@@ -46,25 +46,31 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If7-kL-GHt">
-                                        <rect key="frame" x="0.0" y="66.333333333333343" width="156" height="30"/>
+                                        <rect key="frame" x="0.0" y="66.5" width="156" height="30"/>
                                         <state key="normal" title="set Default Meal Name"/>
                                         <connections>
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsZ-E2-3b2"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="defaultphotoo" highlightedImage="Hustle Mode Activated" translatesAutoresizingMaskIntoConstraints="NO" id="KFD-eP-ICt">
+                                        <rect key="frame" x="0.0" y="104.5" width="355" height="290"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="290" id="UFy-sz-fWu"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Eae-wb-4nl" appends="YES" id="pdp-uD-1kE"/>
+                                        </connections>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1kI-Vf-J7k" customClass="RatingControl" customModule="mealtracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="402.5" width="252" height="44"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="CsW-jA-2K1" secondAttribute="trailing" constant="10" id="97W-7x-FX5"/>
+                                    <constraint firstItem="1kI-Vf-J7k" firstAttribute="top" secondItem="KFD-eP-ICt" secondAttribute="bottom" constant="370" id="sOt-dp-SmY"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="defaultPhoto" highlightedImage="Hustle Mode Activated" translatesAutoresizingMaskIntoConstraints="NO" id="KFD-eP-ICt">
-                                <rect key="frame" x="0.0" y="191" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Eae-wb-4nl" appends="YES" id="pdp-uD-1kE"/>
-                                </connections>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -87,11 +93,11 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-170" y="-2"/>
+            <point key="canvasLocation" x="-71" y="27"/>
         </scene>
     </scenes>
     <resources>
         <image name="Hustle Mode Activated" width="414" height="736"/>
-        <image name="defaultPhoto" width="276" height="490"/>
+        <image name="defaultphotoo" width="1080" height="1080"/>
     </resources>
 </document>

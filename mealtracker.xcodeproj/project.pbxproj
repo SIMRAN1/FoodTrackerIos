@@ -14,6 +14,7 @@
 		5BE02D971F9FDB9700F99D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE02D951F9FDB9700F99D9B /* LaunchScreen.storyboard */; };
 		5BE02DA21F9FDB9700F99D9B /* mealtrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE02DA11F9FDB9700F99D9B /* mealtrackerTests.swift */; };
 		5BE02DAD1F9FDB9800F99D9B /* mealtrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE02DAC1F9FDB9800F99D9B /* mealtrackerUITests.swift */; };
+		5BEB47031FC089E100C3B1DD /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB47021FC089E100C3B1DD /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5BE02DA81F9FDB9800F99D9B /* mealtrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mealtrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE02DAC1F9FDB9800F99D9B /* mealtrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealtrackerUITests.swift; sourceTree = "<group>"; };
 		5BE02DAE1F9FDB9800F99D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BEB47021FC089E100C3B1DD /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				5BE02D8C1F9FDB9700F99D9B /* AppDelegate.swift */,
 				5BE02D8E1F9FDB9700F99D9B /* ViewController.swift */,
+				5BEB47021FC089E100C3B1DD /* RatingControl.swift */,
 				5BE02D901F9FDB9700F99D9B /* Main.storyboard */,
 				5BE02D931F9FDB9700F99D9B /* Assets.xcassets */,
 				5BE02D951F9FDB9700F99D9B /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BE02D8F1F9FDB9700F99D9B /* ViewController.swift in Sources */,
+				5BEB47031FC089E100C3B1DD /* RatingControl.swift in Sources */,
 				5BE02D8D1F9FDB9700F99D9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
