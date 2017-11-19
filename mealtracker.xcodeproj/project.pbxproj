@@ -15,6 +15,7 @@
 		5BE02DA21F9FDB9700F99D9B /* mealtrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE02DA11F9FDB9700F99D9B /* mealtrackerTests.swift */; };
 		5BE02DAD1F9FDB9800F99D9B /* mealtrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE02DAC1F9FDB9800F99D9B /* mealtrackerUITests.swift */; };
 		5BEB47031FC089E100C3B1DD /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB47021FC089E100C3B1DD /* RatingControl.swift */; };
+		5BF6F9001FC21BBF001345CD /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6F8FF1FC21BBF001345CD /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5BE02DAC1F9FDB9800F99D9B /* mealtrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealtrackerUITests.swift; sourceTree = "<group>"; };
 		5BE02DAE1F9FDB9800F99D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BEB47021FC089E100C3B1DD /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		5BF6F8FF1FC21BBF001345CD /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5BE02D8C1F9FDB9700F99D9B /* AppDelegate.swift */,
+				5BF6F8FF1FC21BBF001345CD /* Meal.swift */,
 				5BE02D8E1F9FDB9700F99D9B /* ViewController.swift */,
 				5BEB47021FC089E100C3B1DD /* RatingControl.swift */,
 				5BE02D901F9FDB9700F99D9B /* Main.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF6F9001FC21BBF001345CD /* Meal.swift in Sources */,
 				5BE02D8F1F9FDB9700F99D9B /* ViewController.swift in Sources */,
 				5BEB47031FC089E100C3B1DD /* RatingControl.swift in Sources */,
 				5BE02D8D1F9FDB9700F99D9B /* AppDelegate.swift in Sources */,

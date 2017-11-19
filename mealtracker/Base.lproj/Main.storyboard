@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xo2-iF-kRu">
                                 <rect key="frame" x="0.0" y="40" width="355" height="446.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTC-od-HNf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTC-od-HNf">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -84,6 +84,7 @@
                         <outlet property="mealNameLabel" destination="MTC-od-HNf" id="V6C-aa-9ud"/>
                         <outlet property="nameTextField" destination="H09-LW-sEA" id="rd3-un-Y2a"/>
                         <outlet property="photoImage" destination="KFD-eP-ICt" id="U3W-Po-oX4"/>
+                        <outlet property="ratingcontrol" destination="1kI-Vf-J7k" id="emo-9e-zee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,7 +94,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-71" y="27"/>
+            <point key="canvasLocation" x="145" y="-257"/>
         </scene>
     </scenes>
     <resources>
