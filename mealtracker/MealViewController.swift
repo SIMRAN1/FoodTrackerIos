@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+class MealViewController: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     //MARK:Pr
     
+    //
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -37,7 +38,7 @@ class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControl
     
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        mealNameLabel.text=textField.text
+        
     }
     @IBAction func selectImage(_ sender: UITapGestureRecognizer) {
         nameTextField.resignFirstResponder()
